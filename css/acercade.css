@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.container{
+    color: black;
+    padding: 10px;
+}
+.social-icons img{
+    width: 30px;
+}
+.social-icons img:hover{
+    box-shadow: 0 0 10px #fff;;
+    scale: 1.07;
+    transition: all .5s;
+}

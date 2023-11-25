@@ -1,0 +1,151 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.img{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    padding: 10px;
+
+}
+.titulo{
+    margin: 10px;
+    color: black;
+}
+.navegacion{
+    text-align: center;
+    padding: 20px;
+
+    
+}
+.navegacion a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 25px;
+}
+a:hover{
+    color: #f50400;
+    transition: all .5s;
+    text-decoration: underline;
+}
+.info{
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.image{
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px ;
+    border-bottom: 2px solid black;
+
+}
+.image img{
+    width: 400px;
+    height:300px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.image img:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.07;
+    transition: all .5s;
+}
+.seccion{
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 0px; /* Espacio entre las imágenes */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  .contenedor img {
+    width: 100%; /* Para que las imágenes ocupen todo el ancho de su contenedor */
+    height: 200px; /* Para mantener la proporción de la imagen */
+    border-radius: 10px;
+  }
+  
+@media (max-width: 600px) {
+    .contenedor {
+      grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
+    }
+  }
+  .contenedor img:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.07;
+    transition: all .5s;
+  }
+  .info{
+    border-bottom: 2px solid #000;
+  }
+  
+  footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 40px;
+    padding: 1rem;
+    font-size: larger;
+}
+.container{
+    color: black;
+    padding: 10px;
+}
+.social-icons img{
+    width: 30px;
+}
+.social-icons img:hover{
+    box-shadow: 0 0 10px #fff;;
+    scale: 1.07;
+    transition: all .5s;
+}
+@media screen and (max-width: 768px) {
+    .foto {
+      width: 100%;
+    }
+  
+    .image {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .seccion {
+        margin-left: 20px;
+        text-align: left;
+    }
+}
